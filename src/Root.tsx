@@ -47,7 +47,7 @@ const defaultScenePlan = {
   ],
 };
 
-export const RemotionRoot: React.FC = () => {
+export const RokmotionRoot: React.FC = () => {
   return (
     <>
       <Composition

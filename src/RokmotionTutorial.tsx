@@ -262,7 +262,7 @@ const CodeScene: React.FC = () => {
   const line4 = fadeUp(frame, 34);
 
   const codeLines = [
-    { opacity: line1, text: 'import { interpolate, Sequence } from "remotion";', color: ACCENT },
+    { opacity: line1, text: 'import { interpolate, Sequence } from "rokmotion";', color: ACCENT },
     { opacity: line2, text: "", color: TEXT },
     { opacity: line3, text: "<Sequence from={30}>", color: ACCENT2 },
     { opacity: line4, text: "  <Title text=\"Your video idea\" />", color: "#4ade80" },
@@ -286,7 +286,7 @@ const CodeScene: React.FC = () => {
               textAlign: "center",
             }}
           >
-            Grok writes your Remotion code
+            Grok writes your Rokmotion code
           </h2>
           <div
             style={{
@@ -440,8 +440,8 @@ export const RokmotionTutorial: React.FC<RokmotionTutorialProps> = ({
         <StepScene
           step={3}
           title="Render the video"
-          detail="Grok builds the composition and renders an MP4 with Remotion"
-          command="npx remotion render RokmotionTutorial out/video.mp4"
+          detail="Grok builds the composition and renders an MP4 with Rokmotion"
+          command="npx rokmotion render RokmotionTutorial out/video.mp4"
         />
       </Series.Sequence>
       <Series.Sequence durationInFrames={180}>

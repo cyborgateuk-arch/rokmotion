@@ -316,4 +316,4 @@ npx tsc --noEmit               # Typecheck
 
 ## License
 
-Rokmotion is open source. The underlying render engine is free for teams of up to 3 — see [license](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+Rokmotion is open source. See the [GitHub repo](https://github.com/cyborgateuk-arch/rokmotion) for source and license terms.

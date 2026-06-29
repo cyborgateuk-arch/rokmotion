@@ -366,7 +366,7 @@ const Step3Scene: React.FC = () => {
           ))}
         </div>
         <p style={{ fontFamily: bodyFont, fontSize: 22, color: MUTED, marginTop: 16 }}>
-          Cut-paper style Remotion composition
+          Cut-paper style Rokmotion composition
         </p>
       </PaperCard>
     </AbsoluteFill>
@@ -497,7 +497,7 @@ const Step5Scene: React.FC = () => {
             margin: "0 0 16px",
           }}
         >
-          npx remotion render PaperRokmotionStart out/video.mp4
+          npx rokmotion render PaperRokmotionStart out/video.mp4
         </p>
         <div
           style={{

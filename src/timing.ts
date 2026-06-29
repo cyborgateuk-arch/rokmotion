@@ -4,7 +4,7 @@ export const DURATION_IN_FRAMES = 304;
 // Synced to narration.mp3 segment layout (0.5s intro, segments, 0.35s gaps, 0.8s outro)
 export const INTRO_END = 15;
 export const SCENE1_START = 15;
-export const SCENE1_END = 74; // "Make videos with Grok and Remotion."
+export const SCENE1_END = 74; // "Make videos with Rokmotion."
 export const SCENE2_START = 85;
 export const SCENE2_END = 124; // "Scaffold a project."
 export const SCENE3_START = 135;
