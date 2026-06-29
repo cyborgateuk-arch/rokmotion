@@ -1,27 +1,88 @@
 # Rokmotion
 
-**Create programmatic videos with [Remotion](https://www.remotion.dev) + Grok AI.**
+<p align="center">
+  <strong>Create programmatic videos with Remotion + Grok AI</strong><br>
+  Motion graphics · AI voiceover · Video editing — all from code
+</p>
 
-Rokmotion is a Remotion project and Grok skill that lets you generate motion graphics, tutorials, and edited videos from code — with optional AI voiceover or your own audio.
+<p align="center">
+  <a href="https://www.remotion.dev"><img src="https://img.shields.io/badge/Remotion-4.0-0b84f3?style=flat-square" alt="Remotion"></a>
+  <a href="https://youtu.be/FccxpsBw6S0"><img src="https://img.shields.io/badge/Demo-YouTube-red?style=flat-square&logo=youtube" alt="YouTube Demo"></a>
+  <a href="https://github.com/cyborgateuk-arch/rokmotion"><img src="https://img.shields.io/badge/Open%20Source-GitHub-24292f?style=flat-square&logo=github" alt="GitHub"></a>
+  <img src="https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+</p>
 
-## Demo video
+---
 
-30-second paper-animation tutorial — how to start Rokmotion with Grok, synced to ElevenLabs narration.
+Rokmotion is an open-source **Remotion project** and **Grok skill** that turns text prompts into polished MP4 videos — tutorials, promos, paper animations, and enhanced edits of your existing footage.
+
+<table>
+<tr>
+<td width="50%">
+
+### What you get
+
+- Paper-style & motion-graphics templates
+- **3 creation modes** (voiceover, AI script, video-to-video)
+- ElevenLabs sync with auto scene timing
+- Picture-in-picture overlays (box or circle)
+- Full render pipeline via CLI
+
+</td>
+<td width="50%">
+
+### Built with
+
+| Tool | Role |
+|------|------|
+| [Remotion](https://www.remotion.dev) | React → video engine |
+| [Grok](https://x.ai) | `/rokmotion` AI skill |
+| [ElevenLabs](https://elevenlabs.io) | AI narration (optional) |
+| Node.js + TypeScript | Project runtime |
+
+</td>
+</tr>
+</table>
+
+---
+
+## Watch the demo
+
+**30-second paper-animation tutorial** — learn how to start Rokmotion with Grok, with voiceover synced to every scene.
 
 https://youtu.be/FccxpsBw6S0
 
-**Also on YouTube:** [Watch on YouTube](https://youtu.be/FccxpsBw6S0)
+<p align="center">
+  <a href="https://youtu.be/FccxpsBw6S0"><strong>▶ Watch on YouTube</strong></a>
+  &nbsp;·&nbsp;
+  <a href="demos/PaperRokmotionStart-demo.mp4">Download MP4</a>
+  &nbsp;·&nbsp;
+  <a href="demos/rokmotion-youtube-thumbnail.png">Thumbnail</a>
+</p>
 
-**Download MP4:** [PaperRokmotionStart demo](demos/PaperRokmotionStart-demo.mp4) · [raw file](https://github.com/cyborgateuk-arch/rokmotion/raw/main/demos/PaperRokmotionStart-demo.mp4)
+<details open>
+<summary><strong>Video chapters</strong></summary>
 
-| Scene | Content |
-|-------|---------|
-| Intro | "Start Rokmotion with Grok" — paper cutout style |
-| Step 1 | Type `/rokmotion` in Grok |
-| Step 2 | Describe your video (duration, style, format) |
-| Step 3 | Grok builds Remotion scenes |
-| Step 4 | ElevenLabs syncs voiceover to scene timing |
-| Step 5 | Render your MP4 |
+| Time | Scene | What happens |
+|:----:|-------|----------------|
+| 0:00 | **Intro** | "Start Rokmotion with Grok" — paper cutout title card |
+| 0:04 | **Step 1** | Open Grok and type `/rokmotion` |
+| 0:08 | **Step 2** | Describe your video (style, length, format) |
+| 0:14 | **Step 3** | Grok builds layered Remotion scenes |
+| 0:19 | **Step 4** | ElevenLabs voiceover syncs to scene timing |
+| 0:24 | **Step 5** | Render your final MP4 |
+
+</details>
+
+<details>
+<summary><strong>What this demo was built with</strong></summary>
+
+- Composition: `PaperRokmotionStart` (1920×1080, 30 fps)
+- Style: Kraft paper, sticky notes, cutout layers
+- Audio: ElevenLabs TTS with word-alignment scene sync
+- Render: `npx remotion render PaperRokmotionStart out/video.mp4`
+
+</details>
 
 ---
 
