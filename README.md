@@ -50,10 +50,10 @@ Rokmotion is an open-source **video creation tool** that turns text prompts into
 
 **30-second paper-animation tutorial** — learn how to start Rokmotion, with voiceover synced to every scene.
 
-https://youtu.be/FccxpsBw6S0
+https://www.youtube.com/watch?v=FccxpsBw6S0
 
 <p align="center">
-  <a href="https://youtu.be/FccxpsBw6S0"><strong>▶ Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=FccxpsBw6S0"><strong>▶ Watch on YouTube</strong></a>
   &nbsp;·&nbsp;
   <a href="demos/PaperRokmotionStart-demo.mp4">Download MP4</a>
   &nbsp;·&nbsp;
