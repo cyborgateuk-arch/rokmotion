@@ -1,10 +1,5 @@
 <p align="center">
-  <img src="assets/rokmotion-logo.svg" alt="Rokmotion logo" width="480">
-</p>
-
-<p align="center">
-  <strong>Programmatic videos from code</strong><br>
-  Motion graphics · AI voiceover · video editing
+  <img src="assets/rokmotion-banner.gif" alt="Created with Rokmotion" width="900">
 </p>
 
 <p align="center">
@@ -12,6 +7,73 @@
   <a href="https://youtu.be/FccxpsBw6S0"><img src="https://img.shields.io/badge/Demo-YouTube-red?style=flat-square&logo=youtube" alt="YouTube Demo"></a>
   <a href="https://github.com/cyborgateuk-arch/rokmotion"><img src="https://img.shields.io/badge/Open%20Source-GitHub-24292f?style=flat-square&logo=github" alt="GitHub"></a>
   <img src="https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+</p>
+
+---
+
+## Created with Rokmotion
+
+Six unique styles — all built with code, rendered as GIF previews.
+
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/paper-craft.gif" alt="Paper craft animation" width="280"><br>
+<strong>Paper Craft</strong><br>
+<sub>Cutout layers · sticky notes · tape</sub><br>
+<a href="src/showcase/ShowcaseSamples.tsx#L18">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/neon-grid.gif" alt="Neon cyberpunk grid" width="280"><br>
+<strong>Neon Grid</strong><br>
+<sub>Cyberpunk glow · perspective depth</sub><br>
+<a href="src/showcase/ShowcaseSamples.tsx#L66">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/retro-wave.gif" alt="Retro synthwave" width="280"><br>
+<strong>Retro Wave</strong><br>
+<sub>80s synth · sunset grid · neon</sub><br>
+<a href="src/showcase/ShowcaseSamples.tsx#L108">Source</a>
+
+</td>
+</tr>
+<tr>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/kinetic-type.gif" alt="Kinetic typography" width="280"><br>
+<strong>Kinetic Type</strong><br>
+<sub>Bold typography · rhythm · sync</sub><br>
+<a href="src/showcase/ShowcaseSamples.tsx#L155">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/data-viz.gif" alt="Data visualization" width="280"><br>
+<strong>Data Viz</strong><br>
+<sub>Live charts · gradients · metrics</sub><br>
+<a href="src/showcase/ShowcaseSamples.tsx#L190">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/glass-ui.gif" alt="Glassmorphism UI" width="280"><br>
+<strong>Glass UI</strong><br>
+<sub>Frosted panels · depth · motion</sub><br>
+<a href="src/showcase/ShowcaseSamples.tsx#L230">Source</a>
+
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <a href="https://youtu.be/FccxpsBw6S0"><strong>▶ Watch full 30s demo on YouTube</strong></a>
+  &nbsp;·&nbsp;
+  <a href="demos/PaperRokmotionStart-demo.mp4">Download MP4</a>
 </p>
 
 ---
