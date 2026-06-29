@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/rokmotion-banner.gif" alt="Created with Rokmotion" width="900">
+  <img src="assets/created-with-rokmotion.gif" alt="Rokmotion — videos from code" width="900">
 </p>
 
 <p align="center">
