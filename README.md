@@ -6,9 +6,13 @@ Rokmotion is a Remotion project and Grok skill that lets you generate motion gra
 
 ## Demo video
 
-**[PaperRokmotionStart demo](demos/PaperRokmotionStart-demo.mp4)** — 30-second paper-animation tutorial showing how to start Rokmotion with Grok, synced to ElevenLabs narration.
+30-second paper-animation tutorial — how to start Rokmotion with Grok, synced to ElevenLabs narration.
 
-https://github.com/cyborgateuk-arch/rokmotion/raw/main/demos/PaperRokmotionStart-demo.mp4
+https://youtu.be/FccxpsBw6S0
+
+**Also on YouTube:** [Watch on YouTube](https://youtu.be/FccxpsBw6S0)
+
+**Download MP4:** [PaperRokmotionStart demo](demos/PaperRokmotionStart-demo.mp4) · [raw file](https://github.com/cyborgateuk-arch/rokmotion/raw/main/demos/PaperRokmotionStart-demo.mp4)
 
 | Scene | Content |
 |-------|---------|
