@@ -13,58 +13,214 @@
 
 ## Created with Rokmotion
 
-Six unique styles — all built with code, rendered as GIF previews.
+Programmatic videos for every use case — music visuals, shorts, code animation, campaigns, and more. All previews rendered with Rokmotion.
 
 <table>
 <tr>
 <td width="33%" align="center" valign="top">
 
-<img src="demos/showcase/paper-craft.gif" alt="Paper craft animation" width="280"><br>
+<img src="demos/showcase/paper-craft.gif" alt="Paper Craft" width="240"><br>
 <strong>Paper Craft</strong><br>
 <sub>Cutout layers · sticky notes · tape</sub><br>
-<a href="src/showcase/ShowcaseSamples.tsx#L18">Source</a>
+<a href="src/showcase/ShowcaseSamples.tsx">Source</a>
 
 </td>
 <td width="33%" align="center" valign="top">
 
-<img src="demos/showcase/neon-grid.gif" alt="Neon cyberpunk grid" width="280"><br>
+<img src="demos/showcase/neon-grid.gif" alt="Neon Grid" width="240"><br>
 <strong>Neon Grid</strong><br>
 <sub>Cyberpunk glow · perspective depth</sub><br>
-<a href="src/showcase/ShowcaseSamples.tsx#L66">Source</a>
+<a href="src/showcase/ShowcaseSamples.tsx">Source</a>
 
 </td>
 <td width="33%" align="center" valign="top">
 
-<img src="demos/showcase/retro-wave.gif" alt="Retro synthwave" width="280"><br>
+<img src="demos/showcase/retro-wave.gif" alt="Retro Wave" width="240"><br>
 <strong>Retro Wave</strong><br>
 <sub>80s synth · sunset grid · neon</sub><br>
-<a href="src/showcase/ShowcaseSamples.tsx#L108">Source</a>
+<a href="src/showcase/ShowcaseSamples.tsx">Source</a>
 
 </td>
 </tr>
 <tr>
 <td width="33%" align="center" valign="top">
 
-<img src="demos/showcase/kinetic-type.gif" alt="Kinetic typography" width="280"><br>
+<img src="demos/showcase/kinetic-type.gif" alt="Kinetic Type" width="240"><br>
 <strong>Kinetic Type</strong><br>
 <sub>Bold typography · rhythm · sync</sub><br>
-<a href="src/showcase/ShowcaseSamples.tsx#L155">Source</a>
+<a href="src/showcase/ShowcaseSamples.tsx">Source</a>
 
 </td>
 <td width="33%" align="center" valign="top">
 
-<img src="demos/showcase/data-viz.gif" alt="Data visualization" width="280"><br>
+<img src="demos/showcase/data-viz.gif" alt="Data Viz" width="240"><br>
 <strong>Data Viz</strong><br>
 <sub>Live charts · gradients · metrics</sub><br>
-<a href="src/showcase/ShowcaseSamples.tsx#L190">Source</a>
+<a href="src/showcase/ShowcaseSamples.tsx">Source</a>
 
 </td>
 <td width="33%" align="center" valign="top">
 
-<img src="demos/showcase/glass-ui.gif" alt="Glassmorphism UI" width="280"><br>
+<img src="demos/showcase/glass-ui.gif" alt="Glass UI" width="240"><br>
 <strong>Glass UI</strong><br>
 <sub>Frosted panels · depth · motion</sub><br>
-<a href="src/showcase/ShowcaseSamples.tsx#L230">Source</a>
+<a href="src/showcase/ShowcaseSamples.tsx">Source</a>
+
+</td>
+</tr>
+<tr>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/music-visuals.gif" alt="Banger Show" width="240"><br>
+<strong>Banger Show</strong><br>
+<sub>High quality music visuals without learning 3D</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/viral-shorts.gif" alt="Submagic" width="240"><br>
+<strong>Submagic</strong><br>
+<sub>Captions, B-Rolls, Zooms and Sound Effects</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/code-animate.gif" alt="Hackreels" width="240"><br>
+<strong>Hackreels</strong><br>
+<sub>Animate your code in seconds</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+</tr>
+<tr>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/year-review.gif" alt="GitHub Unwrapped" width="240"><br>
+<strong>GitHub Unwrapped</strong><br>
+<sub>Personalized year-in-review campaign</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/screen-record.gif" alt="Vibrantsnap" width="240"><br>
+<strong>Vibrantsnap</strong><br>
+<sub>Product demos with auto layouts & 4K export</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/ecommerce-ads.gif" alt="AdmoveAI" width="240"><br>
+<strong>AdmoveAI</strong><br>
+<sub>Automated eCommerce ad campaigns</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+</tr>
+<tr>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/karaoke.gif" alt="MyKaraoke" width="240"><br>
+<strong>MyKaraoke</strong><br>
+<sub>Karaoke & lyric videos with AI vocal removal</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/watercolor-map.gif" alt="Watercolor Map" width="240"><br>
+<strong>Watercolor Map</strong><br>
+<sub>Travel animation with watercolor effects</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/weather-app.gif" alt="Hello Météo" width="240"><br>
+<strong>Hello Météo</strong><br>
+<sub>Daily weather report generator</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+</tr>
+<tr>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/automation-tool.gif" alt="Relay.app" width="240"><br>
+<strong>Relay.app</strong><br>
+<sub>Programmatic instructional videos</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/video-stats.gif" alt="MUX" width="240"><br>
+<strong>MUX</strong><br>
+<sub>Dynamic animated video stats</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/anim-stats.gif" alt="AnimStats" width="240"><br>
+<strong>AnimStats</strong><br>
+<sub>Statistics into animated GIFs & videos</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+</tr>
+<tr>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/fluid-background.gif" alt="Fluidmotion" width="240"><br>
+<strong>Fluidmotion</strong><br>
+<sub>Animated backgrounds for apps & videos</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/screencast.gif" alt="Rokmotion Recorder" width="240"><br>
+<strong>Rokmotion Recorder</strong><br>
+<sub>Screen recording built with Rokmotion</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/nextjs-tutorial.gif" alt="Next.js" width="240"><br>
+<strong>Next.js</strong><br>
+<sub>Visual video tutorials for developers</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+</tr>
+<tr>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/electricity-maps.gif" alt="Electricity Maps" width="240"><br>
+<strong>Electricity Maps</strong><br>
+<sub>Heavy electricity data visualization</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/storytelling.gif" alt="Revid" width="240"><br>
+<strong>Revid</strong><br>
+<sub>AI-powered storytelling social videos</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="demos/showcase/product-video.gif" alt="SuperMotion" width="240"><br>
+<strong>SuperMotion</strong><br>
+<sub>Product promo videos from screen recordings</sub><br>
+<a href="src/showcase/ShowcaseExtended.tsx">Source</a>
 
 </td>
 </tr>
@@ -74,8 +230,9 @@ Six unique styles — all built with code, rendered as GIF previews.
   <a href="https://youtu.be/FccxpsBw6S0"><strong>▶ Watch full 30s demo on YouTube</strong></a>
   &nbsp;·&nbsp;
   <a href="demos/PaperRokmotionStart-demo.mp4">Download MP4</a>
+  &nbsp;·&nbsp;
+  <a href="src/showcase/registry.ts">All showcase source</a>
 </p>
-
 ---
 
 Rokmotion is an open-source **video creation tool** that turns text prompts into polished MP4 videos — tutorials, promos, paper animations, and enhanced edits of your existing footage. Use it in Grok with `/rokmotion`.

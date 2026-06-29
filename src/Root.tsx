@@ -11,14 +11,7 @@ import { RokmotionTutorial } from "./RokmotionTutorial";
 import { UserVoiceoverVideo } from "./UserVoiceoverVideo";
 import { VideoToVideoEnhance } from "./VideoToVideoEnhance";
 import { BannerRokmotion } from "./showcase/BannerRokmotion";
-import {
-  DataVizShowcase,
-  GlassUIShowcase,
-  KineticTypeShowcase,
-  NeonGridShowcase,
-  PaperCraftShowcase,
-  RetroWaveShowcase,
-} from "./showcase/ShowcaseSamples";
+import { SHOWCASE_ENTRIES } from "./showcase/registry";
 
 export const rokmotionTutorialSchema = z.object({
   voiceoverEnabled: z.boolean(),
@@ -119,12 +112,17 @@ export const RokmotionRoot: React.FC = () => {
         calculateMetadata={calculateRokmotionTutorialMetadata}
       />
       <Composition id="BannerRokmotion" component={BannerRokmotion} durationInFrames={60} fps={30} width={1080} height={500} />
-      <Composition id="Showcase-PaperCraft" component={PaperCraftShowcase} durationInFrames={90} fps={30} width={640} height={360} />
-      <Composition id="Showcase-NeonGrid" component={NeonGridShowcase} durationInFrames={90} fps={30} width={640} height={360} />
-      <Composition id="Showcase-RetroWave" component={RetroWaveShowcase} durationInFrames={90} fps={30} width={640} height={360} />
-      <Composition id="Showcase-KineticType" component={KineticTypeShowcase} durationInFrames={90} fps={30} width={640} height={360} />
-      <Composition id="Showcase-DataViz" component={DataVizShowcase} durationInFrames={90} fps={30} width={640} height={360} />
-      <Composition id="Showcase-GlassUI" component={GlassUIShowcase} durationInFrames={90} fps={30} width={640} height={360} />
+      {SHOWCASE_ENTRIES.map((entry) => (
+        <Composition
+          key={entry.id}
+          id={entry.id}
+          component={entry.component}
+          durationInFrames={90}
+          fps={30}
+          width={640}
+          height={360}
+        />
+      ))}
     </>
   );
 };

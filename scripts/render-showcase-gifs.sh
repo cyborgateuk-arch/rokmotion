@@ -12,6 +12,24 @@ COMPOSITIONS=(
   "Showcase-KineticType:kinetic-type"
   "Showcase-DataViz:data-viz"
   "Showcase-GlassUI:glass-ui"
+  "Showcase-MusicVisuals:music-visuals"
+  "Showcase-ViralShorts:viral-shorts"
+  "Showcase-CodeAnimate:code-animate"
+  "Showcase-YearReview:year-review"
+  "Showcase-ScreenRecord:screen-record"
+  "Showcase-EcommerceAds:ecommerce-ads"
+  "Showcase-Karaoke:karaoke"
+  "Showcase-WatercolorMap:watercolor-map"
+  "Showcase-WeatherApp:weather-app"
+  "Showcase-AutomationTool:automation-tool"
+  "Showcase-VideoStats:video-stats"
+  "Showcase-AnimStats:anim-stats"
+  "Showcase-FluidBackground:fluid-background"
+  "Showcase-Screencast:screencast"
+  "Showcase-NextJsTutorial:nextjs-tutorial"
+  "Showcase-ElectricityMaps:electricity-maps"
+  "Showcase-Storytelling:storytelling"
+  "Showcase-ProductVideo:product-video"
 )
 
 for entry in "${COMPOSITIONS[@]}"; do
@@ -25,11 +43,11 @@ for entry in "${COMPOSITIONS[@]}"; do
 
   echo "Converting to GIF: $GIF"
   ffmpeg -y -i "$MP4" \
-    -filter_complex "[0:v]fps=12,scale=640:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=96[p];[s1][p]paletteuse=dither=bayer:bayer_scale=3" \
+    -filter_complex "[0:v]fps=10,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=64[p];[s1][p]paletteuse=dither=bayer:bayer_scale=3" \
     -loop 0 "$GIF"
 
   rm -f "$MP4"
   echo "Done: $GIF ($(du -h "$GIF" | cut -f1))"
 done
 
-echo "All showcase GIFs rendered in $OUT_DIR"
+echo "All ${#COMPOSITIONS[@]} showcase GIFs rendered in $OUT_DIR"
