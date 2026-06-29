@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" fill="none">
+  <defs>
+    <filter id="paperShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="0" flood-color="#c9b89a"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="rgba(45,41,38,0.18)"/>
+    </filter>
+    <linearGradient id="rokGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e85d4c"/>
+      <stop offset="100%" stop-color="#3d7a5f"/>
+    </linearGradient>
+  </defs>
+  <!-- Paper badge background -->
+  <rect x="4" y="8" width="472" height="96" rx="8" fill="#faf6ee" stroke="#d9cdb8" stroke-width="2" filter="url(#paperShadow)"/>
+  <!-- Tape strip -->
+  <rect x="180" y="0" width="120" height="22" rx="2" fill="rgba(255,220,120,0.85)" transform="rotate(-3 240 11)"/>
+  <!-- Film strip cutout -->
+  <g transform="translate(24, 34)">
+    <rect width="36" height="52" rx="4" fill="#e8dcc8" stroke="#c9b89a" stroke-width="1.5"/>
+    <rect x="6" y="8" width="24" height="14" rx="2" fill="#2d2926" opacity="0.15"/>
+    <rect x="6" y="30" width="24" height="14" rx="2" fill="#2d2926" opacity="0.15"/>
+    <circle cx="6" cy="15" r="2.5" fill="#c9b89a"/>
+    <circle cx="30" cy="15" r="2.5" fill="#c9b89a"/>
+    <circle cx="6" cy="37" r="2.5" fill="#c9b89a"/>
+    <circle cx="30" cy="37" r="2.5" fill="#c9b89a"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="78" y="78" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="url(#rokGrad)">Rok</text>
+  <text x="198" y="78" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="#2d2926">motion</text>
+  <!-- Scissors accent -->
+  <text x="420" y="72" font-size="28" fill="#6b5e54">✂️</text>
+</svg>
