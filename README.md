@@ -1,8 +1,8 @@
 # Rokmotion
 
 <p align="center">
-  <strong>Create programmatic videos with Remotion + Grok AI</strong><br>
-  Motion graphics · AI voiceover · Video editing — all from code
+  <strong>Rokmotion</strong><br>
+  Programmatic videos from code — motion graphics · AI voiceover · video editing
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
 
 ---
 
-Rokmotion is an open-source **Remotion project** and **Grok skill** that turns text prompts into polished MP4 videos — tutorials, promos, paper animations, and enhanced edits of your existing footage.
+Rokmotion is an open-source **video creation tool** that turns text prompts into polished MP4 videos — tutorials, promos, paper animations, and enhanced edits of your existing footage. Use it in Grok with `/rokmotion`.
 
 <table>
 <tr>
@@ -48,7 +48,7 @@ Rokmotion is an open-source **Remotion project** and **Grok skill** that turns t
 
 ## Watch the demo
 
-**30-second paper-animation tutorial** — learn how to start Rokmotion with Grok, with voiceover synced to every scene.
+**30-second paper-animation tutorial** — learn how to start Rokmotion, with voiceover synced to every scene.
 
 https://youtu.be/FccxpsBw6S0
 
@@ -65,10 +65,10 @@ https://youtu.be/FccxpsBw6S0
 
 | Time | Scene | What happens |
 |:----:|-------|----------------|
-| 0:00 | **Intro** | "Start Rokmotion with Grok" — paper cutout title card |
-| 0:04 | **Step 1** | Open Grok and type `/rokmotion` |
+| 0:00 | **Intro** | "Start Rokmotion" — paper cutout title card |
+| 0:04 | **Step 1** | Type `/rokmotion` to launch |
 | 0:08 | **Step 2** | Describe your video (style, length, format) |
-| 0:14 | **Step 3** | Grok builds layered Remotion scenes |
+| 0:14 | **Step 3** | Rokmotion builds your scenes |
 | 0:19 | **Step 4** | ElevenLabs voiceover syncs to scene timing |
 | 0:24 | **Step 5** | Render your final MP4 |
 

@@ -164,7 +164,7 @@ const IntroScene: React.FC = () => {
         >
           Start Rokmotion
           <br />
-          with Grok
+          Starts Here
         </h1>
         <div
           style={{
@@ -232,7 +232,7 @@ const Step1Scene: React.FC = () => {
         <Tape style={{ top: -8, right: 40, rotate: "8deg" }} />
         <StepLabel n={1} />
         <h2 style={{ fontFamily: handFont, fontSize: 48, color: INK, margin: "0 0 20px" }}>
-          Open Grok
+          Launch Rokmotion
         </h2>
         <p style={{ fontFamily: bodyFont, fontSize: 24, color: MUTED, margin: "0 0 28px" }}>
           Type the slash command to invoke Rokmotion
@@ -330,7 +330,7 @@ const Step3Scene: React.FC = () => {
       >
         <StepLabel n={3} />
         <h2 style={{ fontFamily: handFont, fontSize: 46, color: INK, margin: "0 0 24px" }}>
-          Grok builds your scenes
+          Rokmotion builds your scenes
         </h2>
         <div style={{ position: "relative", height: 200 }}>
           {[
@@ -366,7 +366,7 @@ const Step3Scene: React.FC = () => {
           ))}
         </div>
         <p style={{ fontFamily: bodyFont, fontSize: 22, color: MUTED, marginTop: 16 }}>
-          Cut-paper style Remotion composition
+          Cut-paper style Rokmotion composition
         </p>
       </PaperCard>
     </AbsoluteFill>

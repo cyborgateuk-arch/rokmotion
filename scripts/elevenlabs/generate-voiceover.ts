@@ -4,8 +4,8 @@ import { generateVoiceover, getManifestPath } from "./client";
 dotenv.config();
 
 const NARRATIONS: Record<string, string> = {
-  RokmotionTutorial: `Welcome to Rokmotion with Grok. Create stunning programmatic videos using React and Remotion. Step one: open Grok and type slash rokmotion. Step two: describe your video — the duration, style, and content you need. Step three: Grok writes your Remotion code and renders an MP4 file. Your video is ready. Try it today.`,
-  PaperRokmotionStart: `Want to make videos with code? Here's how to start Rokmotion with Grok. Step one: open Grok and type slash rokmotion. Step two: describe your video — like a thirty second paper animation, synced with audio. Step three: Grok builds your Remotion composition with cut paper style scenes. Step four: ElevenLabs adds voiceover and syncs the timing to each scene. Step five: run the render command and your MP4 is ready. Start creating today.`,
+  RokmotionTutorial: `Welcome to Rokmotion. Create stunning programmatic videos from code. Step one: type slash rokmotion to launch. Step two: describe your video — the duration, style, and content you need. Step three: Rokmotion writes your video code and renders an MP4 file. Your video is ready. Try it today.`,
+  PaperRokmotionStart: `Want to make videos with code? Here's how to start Rokmotion. Step one: type slash rokmotion. Step two: describe your video — like a thirty second paper animation, synced with audio. Step three: Rokmotion builds your composition with cut paper style scenes. Step four: ElevenLabs adds voiceover and syncs the timing to each scene. Step five: run the render command and your MP4 is ready. Start creating today.`,
 };
 
 const main = async () => {

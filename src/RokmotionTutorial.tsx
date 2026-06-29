@@ -121,7 +121,7 @@ const IntroScene: React.FC = () => {
             WebkitTextFillColor: "transparent",
           }}
         >
-          Rokmotion + Grok
+          Rokmotion
         </h1>
         <p
           style={{
@@ -286,7 +286,7 @@ const CodeScene: React.FC = () => {
               textAlign: "center",
             }}
           >
-            Grok writes your Remotion code
+            Rokmotion writes your video code
           </h2>
           <div
             style={{
@@ -440,7 +440,7 @@ export const RokmotionTutorial: React.FC<RokmotionTutorialProps> = ({
         <StepScene
           step={3}
           title="Render the video"
-          detail="Grok builds the composition and renders an MP4 with Remotion"
+          detail="Rokmotion builds the composition and renders your MP4"
           command="npx remotion render RokmotionTutorial out/video.mp4"
         />
       </Series.Sequence>
