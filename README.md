@@ -1,23 +1,88 @@
 # Rokmotion
 
-**Create programmatic videos with [Remotion](https://www.remotion.dev) + Grok AI.**
+<p align="center">
+  <strong>Rokmotion</strong><br>
+  Programmatic videos from code — motion graphics · AI voiceover · video editing
+</p>
 
-Rokmotion is a Remotion project and Grok skill that lets you generate motion graphics, tutorials, and edited videos from code — with optional AI voiceover or your own audio.
+<p align="center">
+  <a href="https://github.com/cyborgateuk-arch/rokmotion"><img src="https://img.shields.io/badge/Rokmotion-1.0-e85d4c?style=flat-square" alt="Rokmotion"></a>
+  <a href="https://youtu.be/FccxpsBw6S0"><img src="https://img.shields.io/badge/Demo-YouTube-red?style=flat-square&logo=youtube" alt="YouTube Demo"></a>
+  <a href="https://github.com/cyborgateuk-arch/rokmotion"><img src="https://img.shields.io/badge/Open%20Source-GitHub-24292f?style=flat-square&logo=github" alt="GitHub"></a>
+  <img src="https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+</p>
 
-## Demo video
+---
 
-**[PaperRokmotionStart demo](demos/PaperRokmotionStart-demo.mp4)** — 30-second paper-animation tutorial showing how to start Rokmotion with Grok, synced to ElevenLabs narration.
+Rokmotion is an open-source **video creation tool** that turns text prompts into polished MP4 videos — tutorials, promos, paper animations, and enhanced edits of your existing footage. Use it in Grok with `/rokmotion`.
 
-https://github.com/cyborgateuk-arch/rokmotion/raw/main/demos/PaperRokmotionStart-demo.mp4
+<table>
+<tr>
+<td width="50%">
 
-| Scene | Content |
-|-------|---------|
-| Intro | "Start Rokmotion with Grok" — paper cutout style |
-| Step 1 | Type `/rokmotion` in Grok |
-| Step 2 | Describe your video (duration, style, format) |
-| Step 3 | Grok builds Remotion scenes |
-| Step 4 | ElevenLabs syncs voiceover to scene timing |
-| Step 5 | Render your MP4 |
+### What you get
+
+- Paper-style & motion-graphics templates
+- **3 creation modes** (voiceover, AI script, video-to-video)
+- ElevenLabs sync with auto scene timing
+- Picture-in-picture overlays (box or circle)
+- Full render pipeline via CLI
+
+</td>
+<td width="50%">
+
+### Built with
+
+| Tool | Role |
+|------|------|
+| Rokmotion CLI | React → video engine |
+| [Grok](https://x.ai) | `/rokmotion` AI skill |
+| [ElevenLabs](https://elevenlabs.io) | AI narration (optional) |
+| Node.js + TypeScript | Project runtime |
+
+</td>
+</tr>
+</table>
+
+---
+
+## Watch the demo
+
+**30-second paper-animation tutorial** — learn how to start Rokmotion, with voiceover synced to every scene.
+
+https://www.youtube.com/watch?v=FccxpsBw6S0
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=FccxpsBw6S0"><strong>▶ Watch on YouTube</strong></a>
+  &nbsp;·&nbsp;
+  <a href="demos/PaperRokmotionStart-demo.mp4">Download MP4</a>
+  &nbsp;·&nbsp;
+  <a href="demos/rokmotion-youtube-thumbnail.png">Thumbnail</a>
+</p>
+
+<details open>
+<summary><strong>Video chapters</strong></summary>
+
+| Time | Scene | What happens |
+|:----:|-------|----------------|
+| 0:00 | **Intro** | "Start Rokmotion" — paper cutout title card |
+| 0:04 | **Step 1** | Type `/rokmotion` to launch |
+| 0:08 | **Step 2** | Describe your video (style, length, format) |
+| 0:14 | **Step 3** | Rokmotion builds your scenes |
+| 0:19 | **Step 4** | ElevenLabs voiceover syncs to scene timing |
+| 0:24 | **Step 5** | Render your final MP4 |
+
+</details>
+
+<details>
+<summary><strong>What this demo was built with</strong></summary>
+
+- Composition: `PaperRokmotionStart` (1920×1080, 30 fps)
+- Style: Kraft paper, sticky notes, cutout layers
+- Audio: ElevenLabs TTS with word-alignment scene sync
+- Render: `npx rokmotion render PaperRokmotionStart out/video.mp4`
+
+</details>
 
 ---
 
@@ -46,7 +111,7 @@ cd rokmotion
 npm install
 ```
 
-First run downloads Remotion and Chrome Headless Shell for rendering (~100 MB).
+First run downloads the render engine and Chrome Headless Shell for rendering (~100 MB).
 
 ### 3. Configure environment (Mode 2 only)
 
@@ -68,10 +133,10 @@ Get a key at [elevenlabs.io](https://elevenlabs.io). **Never commit `.env`** —
 npm run dev
 ```
 
-Opens Remotion Studio at **http://localhost:3000**. You should see all compositions in the sidebar.
+Opens Rokmotion Studio at **http://localhost:3000**. You should see all compositions in the sidebar.
 
 ```bash
-npx remotion compositions
+npx rokmotion compositions
 ```
 
 Lists available video compositions.
@@ -94,7 +159,7 @@ npm run import-assets -- --mode user-voiceover --project myvideo --audio /path/t
 npm run dev
 
 # Render
-npx remotion render UserVoiceoverVideo out/myvideo.mp4 \
+npx rokmotion render UserVoiceoverVideo out/myvideo.mp4 \
   --props='{"mode":"user-voiceover","projectId":"myvideo","audioFile":"uploads/myvideo/voiceover.mp3","durationInSeconds":30}'
 ```
 
@@ -117,7 +182,7 @@ npm run voiceover -- PaperRokmotionStart
 npm run voiceover -- MyComposition Your full narration script here...
 
 # Render (example: paper tutorial)
-npx remotion render PaperRokmotionStart out/video.mp4
+npx rokmotion render PaperRokmotionStart out/video.mp4
 ```
 
 **Auto-generated files:**
@@ -143,7 +208,7 @@ npm run import-assets -- --mode video-to-video --project myedit --video /path/to
 # File: public/uploads/myedit/scene-plan.json
 
 # Render
-npx remotion render VideoToVideoEnhance out/myedit.mp4 \
+npx rokmotion render VideoToVideoEnhance out/myedit.mp4 \
   --props='{"mode":"video-to-video","projectId":"myedit","sourceVideo":"uploads/myedit/source.mp4","audioFile":"uploads/myedit/source-audio.mp3","scenePlan":{...}}'
 ```
 
@@ -181,7 +246,7 @@ cd rokmotion
 npm install
 cp .env.example .env          # add ElevenLabs key
 npm run voiceover -- PaperRokmotionStart
-npx remotion render PaperRokmotionStart out/PaperRokmotionStart.mp4
+npx rokmotion render PaperRokmotionStart out/PaperRokmotionStart.mp4
 ```
 
 Output: `out/PaperRokmotionStart.mp4` (~30s, 1920×1080).
@@ -226,12 +291,12 @@ rokmotion/
 ## Common commands
 
 ```bash
-npm run dev                    # Preview in Remotion Studio
+npm run dev                    # Preview in Rokmotion Studio
 npm run render                 # Render (pass composition ID)
 npm run voiceover -- <id>      # Generate ElevenLabs narration
 npm run import-assets -- ...   # Import user audio or video
 npm run elevenlabs:test        # Verify ElevenLabs API
-npx remotion compositions      # List compositions
+npx rokmotion compositions      # List compositions
 npx tsc --noEmit               # Typecheck
 ```
 
@@ -251,4 +316,4 @@ npx tsc --noEmit               # Typecheck
 
 ## License
 
-Remotion is free for teams of up to 3. See [Remotion license](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+Rokmotion is open source. The underlying render engine is free for teams of up to 3 — see [license](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
