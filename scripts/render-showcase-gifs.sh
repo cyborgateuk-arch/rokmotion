@@ -39,7 +39,7 @@ for entry in "${COMPOSITIONS[@]}"; do
   GIF="$OUT_DIR/${SLUG}.gif"
 
   echo "Rendering $ID..."
-  npx rokmotion render "$ID" "$MP4" --log=error
+  node bin/rokmotion.js render "$ID" "$MP4" --log=error
 
   echo "Converting to GIF: $GIF"
   ffmpeg -y -i "$MP4" \
