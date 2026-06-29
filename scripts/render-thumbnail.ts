@@ -2,35 +2,31 @@ import { execSync } from "child_process";
 import * as fs from "fs";
 import * as path from "path";
 
-const WIDTH = 1280;
-const HEIGHT = 720;
-const htmlPath = path.join(process.cwd(), "assets", "thumbnail.html");
-const outDir = path.join(process.cwd(), "demos");
-const outPng = path.join(outDir, "rokmotion-youtube-thumbnail.png");
-
-const renderWithChrome = () => {
-  const chromePaths = [
-    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    "/Applications/Chromium.app/Contents/MacOS/Chromium",
-  ];
-
-  const chrome = chromePaths.find((p) => fs.existsSync(p));
-  if (!chrome) {
-    throw new Error("Chrome not found for thumbnail render");
-  }
-
-  fs.mkdirSync(outDir, { recursive: true });
-
-  execSync(
-    `"${chrome}" --headless=new --disable-gpu --screenshot="${outPng}" --window-size=${WIDTH},${HEIGHT} --default-background-color=0 "file://${htmlPath}"`,
-    { stdio: "pipe" },
-  );
+const args = process.argv.slice(2);
+const getArg = (flag: string, fallback: string) => {
+  const i = args.indexOf(flag);
+  return i >= 0 && args[i + 1] ? args[i + 1] : fallback;
 };
 
-try {
-  renderWithChrome();
-  console.log(`Thumbnail saved: ${outPng}`);
-} catch (err) {
-  console.error("Thumbnail render failed:", err);
-  process.exit(1);
-}
+const composition = getArg("--composition", getArg("-c", "ThumbnailRokmotion"));
+const output = getArg("--output", getArg("-o", "demos/rokmotion-youtube-thumbnail.png"));
+const frame = getArg("--frame", getArg("-f", "0"));
+const props = getArg("--props", getArg("-p", ""));
+
+const outDir = path.dirname(path.resolve(output));
+fs.mkdirSync(outDir, { recursive: true });
+
+const cmd = [
+  "node",
+  "bin/rokmotion.js",
+  "still",
+  composition,
+  output,
+  `--frame=${frame}`,
+  "--image-format=png",
+  "--log=error",
+  ...(props ? [`--props=${props}`] : []),
+].join(" ");
+
+execSync(cmd, { stdio: "inherit", cwd: process.cwd() });
+console.log(`Thumbnail saved: ${output}`);

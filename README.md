@@ -452,6 +452,7 @@ npx rokmotion render VideoToVideoEnhance out/myedit.mp4 \
 
 | Composition ID | Description | Mode |
 |----------------|-------------|------|
+| `ThumbnailRokmotion` | YouTube thumbnail still (1280×720) | — |
 | `PaperRokmotionStart` | Paper-animation "how to start" tutorial (demo video) | 2 |
 | `RokmotionTutorial` | Dark motion-graphics tutorial | 2 |
 | `UserVoiceoverVideo` | Template for user-provided audio | 1 |
@@ -471,6 +472,34 @@ npx rokmotion render PaperRokmotionStart out/PaperRokmotionStart.mp4
 ```
 
 Output: `out/PaperRokmotionStart.mp4` (~30s, 1920×1080).
+
+---
+
+## Generate a thumbnail
+
+Render a YouTube-ready still (1280×720) with Rokmotion:
+
+```bash
+npm run thumbnail
+```
+
+Custom output, composition, or frame:
+
+```bash
+# Default branded thumbnail → demos/rokmotion-youtube-thumbnail.png
+npm run thumbnail
+
+# CLI shorthand
+npx rokmotion thumbnail
+
+# Thumbnail from any composition (e.g. mid-animation frame)
+npx rokmotion thumbnail --composition Showcase-WatercolorMap --output out/map-thumb.png --frame=45
+
+# Custom headline via props
+npx rokmotion thumbnail --props='{"headline":"My Video","subtitle":"Built with code","badge":"NEW"}'
+```
+
+Edit the default layout in `src/ThumbnailRokmotion.tsx`.
 
 ---
 

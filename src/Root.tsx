@@ -12,6 +12,7 @@ import { UserVoiceoverVideo } from "./UserVoiceoverVideo";
 import { VideoToVideoEnhance } from "./VideoToVideoEnhance";
 import { BannerRokmotion } from "./showcase/BannerRokmotion";
 import { SHOWCASE_ENTRIES } from "./showcase/registry";
+import { ThumbnailRokmotion, thumbnailSchema } from "./ThumbnailRokmotion";
 
 export const rokmotionTutorialSchema = z.object({
   voiceoverEnabled: z.boolean(),
@@ -112,6 +113,20 @@ export const RokmotionRoot: React.FC = () => {
         calculateMetadata={calculateRokmotionTutorialMetadata}
       />
       <Composition id="BannerRokmotion" component={BannerRokmotion} durationInFrames={60} fps={30} width={1080} height={500} />
+      <Composition
+        id="ThumbnailRokmotion"
+        component={ThumbnailRokmotion}
+        durationInFrames={1}
+        fps={30}
+        width={1280}
+        height={720}
+        schema={thumbnailSchema}
+        defaultProps={{
+          headline: "Videos from Code",
+          subtitle: "Type /rokmotion to create",
+          badge: "30 SEC DEMO",
+        }}
+      />
       {SHOWCASE_ENTRIES.map((entry) => (
         <Composition
           key={entry.id}
