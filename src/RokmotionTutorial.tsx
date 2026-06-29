@@ -262,7 +262,7 @@ const CodeScene: React.FC = () => {
   const line4 = fadeUp(frame, 34);
 
   const codeLines = [
-    { opacity: line1, text: 'import { interpolate, Sequence } from "remotion";', color: ACCENT },
+    { opacity: line1, text: 'import { interpolate, Sequence } from "rokmotion";', color: ACCENT },
     { opacity: line2, text: "", color: TEXT },
     { opacity: line3, text: "<Sequence from={30}>", color: ACCENT2 },
     { opacity: line4, text: "  <Title text=\"Your video idea\" />", color: "#4ade80" },
@@ -441,7 +441,7 @@ export const RokmotionTutorial: React.FC<RokmotionTutorialProps> = ({
           step={3}
           title="Render the video"
           detail="Rokmotion builds the composition and renders your MP4"
-          command="npx remotion render RokmotionTutorial out/video.mp4"
+          command="npx rokmotion render RokmotionTutorial out/video.mp4"
         />
       </Series.Sequence>
       <Series.Sequence durationInFrames={180}>

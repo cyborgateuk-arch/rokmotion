@@ -497,7 +497,7 @@ const Step5Scene: React.FC = () => {
             margin: "0 0 16px",
           }}
         >
-          npx remotion render PaperRokmotionStart out/video.mp4
+          npx rokmotion render PaperRokmotionStart out/video.mp4
         </p>
         <div
           style={{

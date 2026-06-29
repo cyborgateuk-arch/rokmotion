@@ -1,7 +1,10 @@
 {
   "name": "rokmotion",
   "version": "1.0.0",
-  "description": "My Remotion video",
+  "description": "Rokmotion — programmatic video creation from code",
+  "bin": {
+    "rokmotion": "./bin/rokmotion.js"
+  },
   "repository": {},
   "license": "UNLICENSED",
   "private": true,
@@ -27,11 +30,12 @@
     "typescript": "5.9.3"
   },
   "scripts": {
-    "dev": "remotion studio",
-    "build": "remotion bundle",
-    "upgrade": "remotion upgrade",
+    "dev": "rokmotion studio",
+    "build": "rokmotion bundle",
+    "upgrade": "rokmotion upgrade",
     "lint": "eslint src && tsc",
-    "render": "remotion render",
+    "render": "rokmotion render",
+    "compositions": "rokmotion compositions",
     "elevenlabs:test": "tsx scripts/elevenlabs/test-connection.ts",
     "voiceover": "tsx scripts/elevenlabs/generate-voiceover.ts",
     "import-assets": "tsx scripts/import-assets.ts"

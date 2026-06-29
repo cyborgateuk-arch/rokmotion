@@ -47,7 +47,7 @@ npm run dev
 Recreate this exact demo:
 
 npm run voiceover -- PaperRokmotionStart
-npx remotion render PaperRokmotionStart out/video.mp4
+npx rokmotion render PaperRokmotionStart out/video.mp4
 
 ━━━━━━━━━━━━━━━━━━━━━━
 🎯 3 WAYS TO MAKE VIDEOS WITH ROKMOTION

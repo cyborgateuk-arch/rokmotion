@@ -33,7 +33,7 @@ const BG = "#08080c";
 const ACCENT = "#f5f5f7";
 const MUTED = "#8b8b9a";
 const GROK = "#ffffff";
-const REMOTION_BLUE = "#0b84f3";
+const ROKMOTION_BLUE = "#0b84f3";
 
 const fade = (frame: number, start: number, end: number) =>
   interpolate(frame, [start, start + 12, end - 12, end], [0, 1, 1, 0], {
@@ -69,7 +69,7 @@ const TitleScene: React.FC = () => {
   const local = frame - SCENE1_START;
   const opacity = fade(frame, SCENE1_START, SCENE1_END);
   const grokScale = slideUp(frame, SCENE1_START + 4, fps);
-  const remotionScale = slideUp(frame, SCENE1_START + 10, fps);
+  const rokmotionScale = slideUp(frame, SCENE1_START + 10, fps);
 
   return (
     <AbsoluteFill
@@ -109,8 +109,8 @@ const TitleScene: React.FC = () => {
         <span style={{ fontSize: 64, fontWeight: 300, color: MUTED }}>+</span>
         <div
           style={{
-            transform: `scale(${interpolate(remotionScale, [0, 1], [0.85, 1])})`,
-            opacity: remotionScale,
+            transform: `scale(${interpolate(rokmotionScale, [0, 1], [0.85, 1])})`,
+            opacity: rokmotionScale,
             display: "flex",
             alignItems: "center",
             gap: 14,
@@ -121,7 +121,7 @@ const TitleScene: React.FC = () => {
               width: 72,
               height: 72,
               borderRadius: 18,
-              background: REMOTION_BLUE,
+              background: ROKMOTION_BLUE,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -133,7 +133,7 @@ const TitleScene: React.FC = () => {
             R
           </div>
           <span style={{ fontSize: 52, fontWeight: 700, color: ACCENT }}>
-            Remotion
+            Rokmotion
           </span>
         </div>
       </div>
@@ -166,7 +166,7 @@ const ScaffoldScene: React.FC = () => {
       easing: Easing.linear,
     }),
   );
-  const command = "npx create-video@latest --blank my-video";
+  const command = "git clone https://github.com/cyborgateuk-arch/rokmotion.git";
 
   return (
     <AbsoluteFill
@@ -179,7 +179,7 @@ const ScaffoldScene: React.FC = () => {
       }}
     >
       <div style={{ width: "100%", maxWidth: 900, transform: `translateY(${interpolate(enter, [0, 1], [40, 0])}px)`, opacity: enter }}>
-        <p style={{ fontSize: 22, color: REMOTION_BLUE, fontWeight: 700, marginBottom: 16, letterSpacing: 2 }}>
+        <p style={{ fontSize: 22, color: ROKMOTION_BLUE, fontWeight: 700, marginBottom: 16, letterSpacing: 2 }}>
           STEP 1
         </p>
         <h2 style={{ fontSize: 44, fontWeight: 700, color: ACCENT, margin: "0 0 32px" }}>
@@ -238,7 +238,7 @@ const GrokScene: React.FC = () => {
       }}
     >
       <div style={{ width: "100%", maxWidth: 860, transform: `translateY(${interpolate(enter, [0, 1], [40, 0])}px)`, opacity: enter }}>
-        <p style={{ fontSize: 22, color: REMOTION_BLUE, fontWeight: 700, marginBottom: 16, letterSpacing: 2 }}>
+        <p style={{ fontSize: 22, color: ROKMOTION_BLUE, fontWeight: 700, marginBottom: 16, letterSpacing: 2 }}>
           STEP 2
         </p>
         <h2 style={{ fontSize: 44, fontWeight: 700, color: ACCENT, margin: "0 0 28px" }}>
@@ -285,7 +285,7 @@ const GrokScene: React.FC = () => {
               transform: `translateY(${interpolate(bubble2, [0, 1], [16, 0])}px)`,
             }}
           >
-            ✓ Building Remotion composition with Sequences & Audio…
+            ✓ Building Rokmotion composition with Sequences & Audio…
           </div>
         </div>
       </div>
@@ -314,7 +314,7 @@ const SyncScene: React.FC = () => {
       }}
     >
       <div style={{ width: "100%", maxWidth: 900, transform: `translateY(${interpolate(enter, [0, 1], [40, 0])}px)`, opacity: enter }}>
-        <p style={{ fontSize: 22, color: REMOTION_BLUE, fontWeight: 700, marginBottom: 16, letterSpacing: 2 }}>
+        <p style={{ fontSize: 22, color: ROKMOTION_BLUE, fontWeight: 700, marginBottom: 16, letterSpacing: 2 }}>
           STEP 3
         </p>
         <h2 style={{ fontSize: 44, fontWeight: 700, color: ACCENT, margin: "0 0 28px" }}>
@@ -423,7 +423,7 @@ const RenderScene: React.FC = () => {
             style={{
               width: `${progress}%`,
               height: "100%",
-              background: `linear-gradient(90deg, ${REMOTION_BLUE}, #6366f1)`,
+              background: `linear-gradient(90deg, ${ROKMOTION_BLUE}, #6366f1)`,
               borderRadius: 6,
             }}
           />
@@ -435,7 +435,7 @@ const RenderScene: React.FC = () => {
             color: "#7ee787",
           }}
         >
-          npx remotion render GrokRemotionIntro out/video.mp4
+          npx rokmotion render RokmotionIntro out/video.mp4
         </p>
         <p style={{ fontSize: 20, color: MUTED, marginTop: 16 }}>
           {Math.round(progress)}% — Done!
@@ -445,7 +445,7 @@ const RenderScene: React.FC = () => {
   );
 };
 
-export const GrokRemotionIntro: React.FC = () => {
+export const RokmotionIntro: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: BG }}>
       <Background />
