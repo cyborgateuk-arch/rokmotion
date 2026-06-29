@@ -1,8 +1,10 @@
-# Rokmotion
+<p align="center">
+  <img src="assets/rokmotion-logo.svg" alt="Rokmotion logo" width="480">
+</p>
 
 <p align="center">
-  <strong>Rokmotion</strong><br>
-  Programmatic videos from code — motion graphics · AI voiceover · video editing
+  <strong>Programmatic videos from code</strong><br>
+  Motion graphics · AI voiceover · video editing
 </p>
 
 <p align="center">
