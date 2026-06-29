@@ -1,5 +1,6 @@
 import { loadFont } from "@remotion/google-fonts/PatrickHand";
 import { loadFont as loadNunito } from "@remotion/google-fonts/Nunito";
+import { ThemeIcon } from "./components/ThemeIcons";
 import { AbsoluteFill } from "remotion";
 import { z } from "zod";
 
@@ -90,9 +91,15 @@ export const ThumbnailRokmotion: React.FC<ThumbnailProps> = ({
         {badge}
       </div>
 
-      <div style={{ position: "absolute", top: 80, left: 60, fontSize: 40, transform: "rotate(-12deg)" }}>📄</div>
-      <div style={{ position: "absolute", bottom: 70, left: 90, fontSize: 40, transform: "rotate(8deg)" }}>✂️</div>
-      <div style={{ position: "absolute", top: 100, right: 100, fontSize: 40, transform: "rotate(10deg)" }}>🎬</div>
+      <div style={{ position: "absolute", top: 80, left: 60, transform: "rotate(-12deg)" }}>
+        <ThemeIcon name="paper" size={36} color="#6b5e54" />
+      </div>
+      <div style={{ position: "absolute", bottom: 70, left: 90, transform: "rotate(8deg)" }}>
+        <ThemeIcon name="scissors" size={36} color="#6b5e54" />
+      </div>
+      <div style={{ position: "absolute", top: 100, right: 100, transform: "rotate(10deg)" }}>
+        <ThemeIcon name="film" size={36} color="#0b84f3" />
+      </div>
 
       <div
         style={{

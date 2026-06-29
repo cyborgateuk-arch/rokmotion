@@ -1,3 +1,4 @@
+import { ThemeIcon, type ThemeIconName } from "../components/ThemeIcons";
 import { loadFont } from "@remotion/google-fonts/Inter";
 import {
   AbsoluteFill,
@@ -223,7 +224,7 @@ export const ViralShortsShowcase: React.FC = () => {
   const frame = useCurrentFrame();
   const zoom = interpolate(frame, [20, 35, 50], [1, 1.18, 1], clamp);
   const capLine = Math.floor(interpolate(frame, [8, 70], [0, 3.99], clamp));
-  const captions = ["Wait for it…", "THIS changes everything", "Follow for more 🔥"];
+  const captions = ["Wait for it…", "THIS changes everything", "Follow for more"];
   return (
     <ShowcaseCard
       title="Submagic"
@@ -458,11 +459,11 @@ export const ScreenRecordShowcase: React.FC = () => {
 export const EcommerceAdsShowcase: React.FC = () => {
   const frame = useCurrentFrame();
   const slide = interpolate(frame, [0, 90], [40, -200], clamp);
-  const products = [
-    { emoji: "👟", name: "Air Max", price: "$129" },
-    { emoji: "👜", name: "Leather Bag", price: "$89" },
-    { emoji: "⌚", name: "Smart Watch", price: "$249" },
-    { emoji: "🎧", name: "Pro Buds", price: "$59" },
+  const products: { icon: ThemeIconName; name: string; price: string; color: string }[] = [
+    { icon: "sneaker", name: "Air Max", price: "$129", color: "#e85d4c" },
+    { icon: "bag", name: "Leather Bag", price: "$89", color: "#8b5cf6" },
+    { icon: "watch", name: "Smart Watch", price: "$249", color: "#0b84f3" },
+    { icon: "headphones", name: "Pro Buds", price: "$59", color: "#14b8a6" },
   ];
   return (
     <ShowcaseCard
@@ -483,7 +484,9 @@ export const EcommerceAdsShowcase: React.FC = () => {
               transform: `rotate(${interpolate(frame, [i * 6, i * 6 + 20], [-4, 0], clamp)}deg)`,
             }}
           >
-            <div style={{ fontSize: 44, textAlign: "center" }}>{p.emoji}</div>
+            <div style={{ display: "flex", justifyContent: "center", padding: "8px 0" }}>
+              <ThemeIcon name={p.icon} size={40} color={p.color} />
+            </div>
             <div style={{ fontSize: 13, fontWeight: 700, color: "#1e293b", marginTop: 8 }}>{p.name}</div>
             <div style={{ fontSize: 16, fontWeight: 800, color: "#e85d4c", marginTop: 4 }}>{p.price}</div>
             <div style={{ marginTop: 10, background: "#0b84f3", color: "#fff", fontSize: 11, fontWeight: 700, textAlign: "center", borderRadius: 6, padding: "6px 0" }}>
@@ -573,8 +576,12 @@ export const WeatherAppShowcase: React.FC = () => {
       subtitle="Daily weather report generator"
       bg="linear-gradient(180deg,#4facfe 0%,#87CEEB 45%,#E0F4FF 100%)"
     >
-      <div style={{ position: "absolute", top: 30 + cloudX, left: 60, fontSize: 48, opacity: 0.7 }}>☁️</div>
-      <div style={{ position: "absolute", top: 50, right: 80, fontSize: 36, opacity: 0.5 }}>☁️</div>
+      <div style={{ position: "absolute", top: 30 + cloudX, left: 60, opacity: 0.7 }}>
+        <ThemeIcon name="cloud" size={44} color="#fff" />
+      </div>
+      <div style={{ position: "absolute", top: 50, right: 80, opacity: 0.5 }}>
+        <ThemeIcon name="cloud" size={34} color="#fff" />
+      </div>
       <div
         style={{
           position: "absolute",
@@ -589,7 +596,9 @@ export const WeatherAppShowcase: React.FC = () => {
           boxShadow: "0 16px 40px rgba(30,58,95,0.15)",
         }}
       >
-        <div style={{ fontSize: 56 }}>☀️</div>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <ThemeIcon name="sun" size={52} color="#f59e0b" />
+        </div>
         <div style={{ fontSize: 52, fontWeight: 900, marginTop: 4 }}>{temp}°C</div>
         <div style={{ fontSize: 14, opacity: 0.7, marginTop: 4 }}>Paris · Partly sunny</div>
         <div style={{ display: "flex", gap: 16, marginTop: 16, justifyContent: "center" }}>
@@ -608,10 +617,10 @@ export const WeatherAppShowcase: React.FC = () => {
 export const AutomationToolShowcase: React.FC = () => {
   const frame = useCurrentFrame();
   const flow = interpolate(frame, [0, 90], [0, 1], clamp);
-  const steps = [
-    { label: "Webhook", icon: "⚡" },
-    { label: "Transform", icon: "⚙️" },
-    { label: "Render", icon: "🎬" },
+  const steps: { label: string; icon: ThemeIconName }[] = [
+    { label: "Webhook", icon: "lightning" },
+    { label: "Transform", icon: "gear" },
+    { label: "Render", icon: "film" },
   ];
   return (
     <ShowcaseCard
@@ -636,7 +645,9 @@ export const AutomationToolShowcase: React.FC = () => {
                 transform: `scale(${interpolate(flow, [i / steps.length, (i + 0.5) / steps.length], [1, 1.06], clamp)})`,
               }}
             >
-              <div style={{ fontSize: 22 }}>{s.icon}</div>
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <ThemeIcon name={s.icon} size={24} color="currentColor" />
+              </div>
               <div style={{ marginTop: 6 }}>{s.label}</div>
             </div>
             {i < steps.length - 1 ? (
@@ -683,7 +694,10 @@ export const VideoStatsShowcase: React.FC = () => {
           ))}
         </div>
         <div style={{ position: "absolute", top: 14, left: 14, background: "rgba(0,0,0,0.85)", padding: "10px 14px", borderRadius: 10, border: "1px solid #333" }}>
-          <div style={{ fontSize: 18, fontWeight: 800, color: "#0b84f3" }}>▶ {views.toLocaleString()}</div>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 18, fontWeight: 800, color: "#0b84f3" }}>
+            <ThemeIcon name="play" size={16} color="#0b84f3" />
+            {views.toLocaleString()}
+          </div>
           <div style={{ fontSize: 11, color: "#94a3b8", marginTop: 2 }}>{Math.round(watch)}% watched · 4K</div>
         </div>
       </div>

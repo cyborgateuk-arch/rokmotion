@@ -27,5 +27,9 @@
   <text x="78" y="78" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="url(#rokGrad)">Rok</text>
   <text x="198" y="78" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="#2d2926">motion</text>
   <!-- Scissors accent -->
-  <text x="420" y="72" font-size="28" fill="#6b5e54">✂️</text>
+  <g transform="translate(408, 44)" stroke="#6b5e54" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <circle cx="5" cy="5" r="2.5"/>
+    <circle cx="5" cy="17" r="2.5"/>
+    <path d="M7 6.5L18 2M7 15.5L18 20M7 6.5V15.5"/>
+  </g>
 </svg>

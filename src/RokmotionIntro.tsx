@@ -1,5 +1,6 @@
 import { loadFont } from "@remotion/google-fonts/Inter";
 import React from "react";
+import { ThemeIcon } from "./components/ThemeIcons";
 import {
   AbsoluteFill,
   Audio,
@@ -285,7 +286,10 @@ const GrokScene: React.FC = () => {
               transform: `translateY(${interpolate(bubble2, [0, 1], [16, 0])}px)`,
             }}
           >
-            ✓ Building Rokmotion composition with Sequences & Audio…
+            <span style={{ display: "inline-flex", alignItems: "center", gap: 10 }}>
+              <ThemeIcon name="check" size={20} color="#22c55e" />
+              Building Rokmotion composition with Sequences & Audio…
+            </span>
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { ThemeIcon } from "./components/ThemeIcons";
 import {
   AbsoluteFill,
   Audio,
@@ -360,7 +361,7 @@ const OutroScene: React.FC = () => {
             boxShadow: `0 0 60px ${ACCENT}55`,
           }}
         >
-          ✓
+          <ThemeIcon name="check" size={56} color="#fff" />
         </div>
         <h2
           style={{

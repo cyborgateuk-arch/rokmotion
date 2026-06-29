@@ -1,4 +1,5 @@
 import { loadFont } from "@remotion/google-fonts/Inter";
+import { ThemeIcon, type ThemeIconName } from "../components/ThemeIcons";
 import {
   AbsoluteFill,
   Easing,
@@ -43,16 +44,15 @@ export const PaperCraftShowcase: React.FC = () => {
       >
         <div style={{ fontSize: 42, fontWeight: 800, color: "#e85d4c", marginBottom: 8 }}>Paper Craft</div>
         <div style={{ fontSize: 18, color: "#6b5e54" }}>Cutout layers · sticky notes · tape</div>
-        <div style={{ marginTop: 16, display: "flex", gap: 8 }}>
-          {["📄", "✂️", "📌"].map((e, i) => (
+        <div style={{ marginTop: 16, display: "flex", gap: 12 }}>
+          {(["paper", "scissors", "pin"] as ThemeIconName[]).map((icon, i) => (
             <div
-              key={e}
+              key={icon}
               style={{
-                fontSize: 28,
                 transform: `rotate(${interpolate(frame, [i * 8, i * 8 + 20], [-8, 8], clamp)}deg)`,
               }}
             >
-              {e}
+              <ThemeIcon name={icon} size={28} color="#6b5e54" />
             </div>
           ))}
         </div>

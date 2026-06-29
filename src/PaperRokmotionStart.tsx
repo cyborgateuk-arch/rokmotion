@@ -10,6 +10,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
+import { ThemeIcon, type ThemeIconName } from "./components/ThemeIcons";
 import { paperRokmotionStartTiming as T } from "./voiceover/PaperRokmotionStart.timing";
 
 const { fontFamily: handFont } = loadFont();
@@ -174,9 +175,9 @@ const IntroScene: React.FC = () => {
             marginTop: 32,
           }}
         >
-          {["✂️", "📄", "🎬"].map((emoji, i) => (
+          {(["scissors", "paper", "film"] as ThemeIconName[]).map((icon, i) => (
             <div
-              key={emoji}
+              key={icon}
               style={{
                 scale: pieces[i],
                 width: 64,
@@ -186,12 +187,11 @@ const IntroScene: React.FC = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontSize: 32,
                 boxShadow: "0 3px 0 #c9b89a",
                 rotate: `${wobble(frame, i + 2)}deg`,
               }}
             >
-              {emoji}
+              <ThemeIcon name={icon} size={30} color={INK} />
             </div>
           ))}
         </div>
@@ -502,11 +502,17 @@ const Step5Scene: React.FC = () => {
         <div
           style={{
             scale: checkScale,
-            fontSize: 56,
+            display: "flex",
+            alignItems: "center",
+            gap: 12,
+            fontSize: 48,
             color: ACCENT2,
+            fontFamily: bodyFont,
+            fontWeight: 800,
           }}
         >
-          ✓ Ready!
+          <ThemeIcon name="check" size={44} color={ACCENT2} />
+          Ready!
         </div>
       </PaperCard>
     </AbsoluteFill>
